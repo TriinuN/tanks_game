@@ -44,10 +44,9 @@ class Tank:
             if targetX == self.x:
                 if targetY > self.y and self.direction == "up":
                     return True
-                if targetY > self.y and self.direction == "down":
+                if targetY < self.y and self.direction == "down":
                     return True
                 return False
-
 
 
 class Target:
